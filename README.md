@@ -46,7 +46,7 @@ flowchart LR
     BE --> SMTP[✉️ Correo SMTP]
     BE --> FS[📁 Fotos y PDFs]
     FS -. respaldo SFTP cifrado .-> NAS[(NAS de la empresa)]
-    subgraph VPS Ubuntu · Docker Compose
+    subgraph VPS["VPS Ubuntu + Docker Compose"]
       FE
       BE
       DB
